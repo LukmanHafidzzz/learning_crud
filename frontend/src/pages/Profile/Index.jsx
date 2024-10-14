@@ -3,7 +3,7 @@ import axios from 'axios'
 import { Button, Container, Form } from 'react-bootstrap'
 import { useNavigate, useParams } from 'react-router-dom';
 
-export default function EditUser() {
+export default function Index() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [gender, setGender] = useState("male");
@@ -46,8 +46,8 @@ export default function EditUser() {
     return (
         <>
             <Container>
-                <div className="fw-semibold fs-4 text-center my-4">
-                    Create User
+                <div className="fw-semibold fs-4 text-start my-4">
+                    Update Profile
                 </div>
 
                 <Form onSubmit={updateUser}>
